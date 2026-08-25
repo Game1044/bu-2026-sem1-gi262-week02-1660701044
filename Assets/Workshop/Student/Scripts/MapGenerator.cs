@@ -28,6 +28,17 @@ namespace Workshop.Student
             // 1. random player at the position <0, 0> map
 
             // 2. create obstacles
+            int midX = columns / 2;
+            int midY = rows / 2;
+
+            for (int y = 0; y <= midY; y++)
+            {
+                int r = UnityEngine.Random.Range(0, wallTiles.Length);
+                GameObject obstacle = Instantiate(wallTiles[r], 
+                    new Vector3(midX, y, -1f), 
+                    Quaternion.identity);
+                obstacle.name = $"Obstacle_{midX}-{y}";
+            }
 
             // 3. create floor
             //int x = 1;
@@ -42,6 +53,8 @@ namespace Workshop.Student
                     floor.name = $"{x}-{y}";
                 }
             }
+
+            
 
             // 4. create walls
             for (int y = -1; y < rows + 1; y++)
