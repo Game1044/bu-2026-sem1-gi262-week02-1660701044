@@ -165,8 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Assignment
   as01_items:
   - {fileID: 6401792816642385161, guid: 8daba404af8ca2b449f79f2ef2325e42, type: 3}
-  - {fileID: 8352787512774635016, guid: 6d6ca20a8028f4948abbd0a9460d250f, type: 3}
-  - {fileID: 8100579626664158719, guid: c1fd18bc07765e94687daeaba77a29f5, type: 3}
+  - {fileID: 6401792816642385161, guid: 8daba404af8ca2b449f79f2ef2325e42, type: 3}
   as02_floorTiles:
   - {fileID: 8981274605333006497, guid: 93d0b3edf258c194ca8e4bdaedb3507d, type: 3}
   - {fileID: 5525326628935868067, guid: 42ae0a1037f220c46be78186c07b001e, type: 3}
@@ -217,16 +216,16 @@ MonoBehaviour:
     rows: 3
     cols: 3
     data:
-    - X
-    - X
     - O
-    - X
+    - 
+    - 
     - O
     - X
     - 
-    - ' '
-    - ' '
-  ex01_playerTurn: 1
+    - X
+    - O
+    - X
+  ex01_playerTurn: X
   ex01_row: 0
   ex01_column: 2
 --- !u!1 &652921969
